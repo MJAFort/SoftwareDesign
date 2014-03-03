@@ -14,8 +14,10 @@ def get_primes(n):
         for j in range(1,i):
             if i % j == 0:
                 isPrime = False
-        if isPrime:
-            return_val.append(i)
+            if i % j+1 == 0:
+                isPrime = False
+            else:
+               return_val.append(i)
     return return_val
 
 

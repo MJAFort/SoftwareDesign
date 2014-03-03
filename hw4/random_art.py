@@ -92,5 +92,4 @@ def makeinart(sizex,sizey,min_depth,max_depth,number):
             gmap = remap_interval(green,-1.0,1.0,0,255)
             im.putpixel((i,j),(int(rmap),int(gmap),int(bmap)))
     im.save("image" + str(number) + ".bmp")
-makeinart(500,500,5,13,2)
-            
+makeinart(2000,500,0,25,22)
